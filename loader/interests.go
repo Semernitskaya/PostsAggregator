@@ -1,7 +1,6 @@
 package main
 
 import (
-	"strconv"
 	"strings"
 )
 
@@ -11,9 +10,8 @@ type InterestsHolder struct {
 
 func (h *InterestsHolder) String() string {
 	var str strings.Builder
-	for key, value := range h.Cache {
-		str.WriteString("Key:" + key + " Value:" + strconv.FormatBool(value))
-		str.WriteString("  ")
+	for key := range h.Cache {
+		str.WriteString("#" + key + " ")
 	}
 	return str.String()
 }
