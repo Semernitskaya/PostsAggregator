@@ -1,1 +1,1 @@
-## Web application for aggregation interests from twitter
+## Web application for aggregation it-posts from different sources
